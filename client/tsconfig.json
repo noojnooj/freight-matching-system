@@ -1,0 +1,38 @@
+{
+  "extends": "expo/tsconfig.base", // expo의 기본 tsconfig 설정을 확장
+  "compilerOptions": {
+    "strict": true, // 엄격한 타입 검사 활성화
+    "target": "ES2020", // 컴파일 결과의 자바스크립트 버전 지정
+    "module": "esnext", // 모듈 시스템을 ESNext로 설정
+    "moduleResolution": "bundler", // 번들러 방식의 모듈 해석 사용
+    "jsx": "react-jsx", // JSX 변환 방식을 react-jsx로 설정
+    "baseUrl": "./", // 기본 경로를 현재 디렉토리로 설정
+    "paths": { "@/*": ["./*"] }, // @로 시작하는 경로 별칭 설정
+    "types": ["react", "react-native", "expo-router"], // 포함할 타입 정의 지정
+    "esModuleInterop": true, // CommonJS 모듈의 ES6 방식 import 허용
+    "resolveJsonModule": true, // JSON 파일 import 허용
+    "skipLibCheck": true, // 라이브러리 타입 검사 생략
+    "noEmit": true, // 실제 파일 출력하지 않음
+    "allowJs": true, // JS 파일도 컴파일 대상에 포함
+    "allowSyntheticDefaultImports": true, // default import 문법 허용
+    "moduleDetection": "force", // 모듈 감지 방식 강제 지정
+    "customConditions": ["react-native"], // 커스텀 조건 react-native 사용
+    "resolvePackageJsonExports": true, // package.json의 exports 필드 해석
+    "resolvePackageJsonImports": true, // package.json의 imports 필드 해석
+    "strictNullChecks": true, // null 및 undefined에 대한 엄격한 검사
+    "noImplicitAny": true, // any 타입 암시적 사용 금지
+    "noImplicitThis": true, // this의 암시적 any 타입 금지
+    "strictFunctionTypes": true, // 함수 타입의 엄격한 검사
+    "strictBindCallApply": true, // bind/call/apply의 엄격한 타입 검사
+    "strictPropertyInitialization": true, // 클래스 프로퍼티 초기화 엄격 검사
+    "useUnknownInCatchVariables": true, // catch 변수 타입을 unknown으로 설정
+    "forceConsistentCasingInFileNames": true, // 파일명 대소문자 일관성 검사
+    "lib": ["dom", "esnext"] // 사용할 라이브러리 지정
+  },
+  "include": [
+    "**/*.ts", // 모든 ts 파일 포함
+    "**/*.tsx", // 모든 tsx 파일 포함
+    ".expo/types/**/*.ts", // expo 타입 정의 파일 포함
+    "expo-env.d.ts" // 환경 타입 정의 파일 포함
+  ]
+}
