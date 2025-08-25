@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native';
-import Login from './login/login';
+import Login from './(auth)/Login';
 
 export default function Home() {
   return (

@@ -1,6 +1,9 @@
 import { View, Text, TextInput, Button, TouchableOpacity, StyleSheet } from "react-native";
+import { useRouter } from "expo-router";
 
 export default function Login() {
+  const router = useRouter();
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>로그인</Text>
@@ -10,7 +13,9 @@ export default function Login() {
         placeholder="전화번호"
       />
       
-      <Button title="로그인" onPress={() => {}} />
+      <Button title="로그인"
+        onPress={() => router.replace("/(main)")}
+      />
       
       <TouchableOpacity onPress={() => {}}>
         <Text style={styles.link}>회원가입</Text>
