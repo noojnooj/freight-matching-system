@@ -1,9 +1,11 @@
 import { View, Text, StyleSheet } from 'react-native';
+import Login from './login/login';
 
 export default function Home() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Hello, world</Text>
+      <Login />
     </View>
   );
 }
