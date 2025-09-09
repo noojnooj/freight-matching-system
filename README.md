@@ -1,67 +1,7 @@
-# freight-matching-system
-```
-freight-matching-system
-├─ README.md
-└─ client
-   ├─ .expo
-   │  ├─ README.md
-   │  ├─ devices.json
-   │  ├─ types
-   │  │  └─ router.d.ts
-   │  └─ web
-   │     └─ cache
-   │        └─ production
-   │           └─ images
-   │              └─ favicon
-   │                 └─ favicon-24272cdaeff82cc5facdaccd982a6f05b60c4504704bbf94c19a6388659880bb-contain-transparent
-   │                    └─ favicon-48.png
-   ├─ README.md
-   ├─ app
-   │  ├─ (tabs)
-   │  │  ├─ _layout.tsx
-   │  │  ├─ explore.tsx
-   │  │  └─ index.tsx
-   │  ├─ +not-found.tsx
-   │  └─ _layout.tsx
-   ├─ app.json
-   ├─ assets
-   │  ├─ fonts
-   │  │  └─ SpaceMono-Regular.ttf
-   │  └─ images
-   │     ├─ adaptive-icon.png
-   │     ├─ favicon.png
-   │     ├─ icon.png
-   │     ├─ partial-react-logo.png
-   │     ├─ react-logo.png
-   │     ├─ react-logo@2x.png
-   │     ├─ react-logo@3x.png
-   │     └─ splash-icon.png
-   ├─ babel.config.js
-   ├─ components
-   │  ├─ Collapsible.tsx
-   │  ├─ ExternalLink.tsx
-   │  ├─ HapticTab.tsx
-   │  ├─ HelloWave.tsx
-   │  ├─ ParallaxScrollView.tsx
-   │  ├─ ThemedText.tsx
-   │  ├─ ThemedView.tsx
-   │  └─ ui
-   │     ├─ IconSymbol.ios.tsx
-   │     ├─ IconSymbol.tsx
-   │     ├─ TabBarBackground.ios.tsx
-   │     └─ TabBarBackground.tsx
-   ├─ constants
-   │  └─ Colors.ts
-   ├─ eslint.config.js
-   ├─ expo-env.d.ts
-   ├─ hooks
-   │  ├─ useColorScheme.ts
-   │  ├─ useColorScheme.web.ts
-   │  └─ useThemeColor.ts
-   ├─ package.json
-   ├─ scripts
-   │  └─ reset-project.js
-   ├─ tsconfig.json
-   └─ yarn.lock
+# 화물 중개 서비스
 
-```
+- **언어**: TypeScript
+- **프레임워크**: React Native (Expo 또는 CLI)
+- **개발환경**: Visual Studio Code + Metro
+- **상태관리**: Redux Toolkit + RTK Query 또는 Zustand
+- **스타일링**: Styled-Components 또는 NativeWind (Tailwind for RN)
